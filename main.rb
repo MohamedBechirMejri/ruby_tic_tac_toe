@@ -35,6 +35,7 @@ def pick_spot
 end
 
 def check_game_over
+  system 'clear'
   print_board $board
   if $picks.values.any? { |pattern| pattern == %w[X X X] }
     puts 'X is the Winner!'
